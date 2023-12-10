@@ -1,0 +1,14 @@
+<div class="series-container">
+  <div *ngFor="let serie of getPaginatedSeries()" class="serie-item">
+    <a [routerLink]="['/details', serie.imdbID]">
+      <img [src]="getSerieImageURL(serie.imdbID)" alt="{{ serie.Title }}" />
+      <p>{{ serie.Title }}</p>
+    </a>
+  </div>
+</div>
+
+<div class="pagination">
+  <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+  <span>Page {{ currentPage }}</span>
+  <button (click)="nextPage()" [disabled]="currentPage * itemsPerPage >= series.length">Next</button>
+</div>

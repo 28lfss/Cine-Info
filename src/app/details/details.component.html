@@ -1,0 +1,8 @@
+<div class="details-container">
+  <div *ngIf="movieDetails">
+    <h1>{{ movieDetails.Title }}</h1>
+    <h3>{{ movieDetails.Year }} ({{ movieDetails.Type }})</h3>
+    <img [src]="movieDetails.Poster" alt="{{ movieDetails.Title }}" />
+    <p>{{ movieDetails.Plot }}</p>
+  </div>
+</div>

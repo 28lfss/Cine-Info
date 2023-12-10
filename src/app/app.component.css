@@ -1,0 +1,57 @@
+.header {
+  position: sticky;
+  background: linear-gradient(to bottom, rgb(233, 192, 10), #d8870e);
+  padding-bottom: 10px;
+}
+
+.title-search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-family: 'Algerian', sans-serif;
+  color: black;
+  font-size: 37px;
+  margin: 0;
+}
+
+.search-input-container {
+  display: flex;
+  margin-right: 43%;
+  margin-left: 4%;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+}
+
+button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-button {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+  transition: background-color 0.3s, color 0,3s;
+}
+
+.navigation-button:hover {
+  background-color: whitesmoke;
+  color: rgb(214, 184, 14);
+}

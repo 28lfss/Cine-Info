@@ -1,0 +1,21 @@
+<div class="welcome-container">
+    <h1>Welcome to Cine Info!</h1>
+    <p>This website is designed to provide you with information about movies and series. Explore the world of entertainment, discover new releases, and dive into the details of your favorite films and TV shows.</p>
+    <p>Feel free to use the search feature to find information about specific movies or series. Stay tuned for updates on the latest releases. Cine Info is your cinematic companion on your entertainment journey.</p>
+    <p>Start exploring now and enjoy the immersive world of movies and series at your fingertips!</p>
+
+    <h2>Movies Recommendations</h2>
+    <h2>Top Movies/Series of the Week</h2>
+    <div class="horizontal-list">
+      <div *ngFor="let id of recommendedMovieIds" class="list-item" (click)="navigateToDetails(id)">
+        <img [src]="getRecommendedImageURL(id)" alt="Recommended Movie">
+      </div>
+    </div>
+  
+    <h2>Series Recommendations</h2>
+    <div class="horizontal-list">
+      <div *ngFor="let id of recommendedSeriesIds" class="list-item" (click)="navigateToDetails(id)">
+        <img [src]="getRecommendedImageURL(id)" alt="Recommended Series">
+      </div>
+    </div>
+</div>

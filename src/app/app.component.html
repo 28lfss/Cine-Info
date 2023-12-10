@@ -1,0 +1,21 @@
+<div class="header">
+  <div class="title-search-container">
+    <div>
+      <button class="title" routerLink="/">CINE INFO</button>
+    </div>
+    <div class="search-input-container">
+      <input type="text" id="searchInput" placeholder="Search movies and series" [(ngModel)]="searchTerm" (keyup.enter)="search()" />
+      <button (click)="searchResult()">
+        <mat-icon>search</mat-icon>
+      </button>
+    </div>
+  </div>
+
+  <div class="navigation-buttons">
+    <button class="navigation-button" routerLink="/">HOME</button>
+    <button class="navigation-button" routerLink="/movies">MOVIES</button>
+    <button class="navigation-button" routerLink="/series">SERIES</button>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

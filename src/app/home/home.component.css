@@ -1,0 +1,45 @@
+.welcome-container {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Algerian', sans-serif;
+  font-weight: bold;
+}
+
+h2 {
+    justify-content: center;
+}
+
+p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.horizontal-list {
+    display: flex;
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+  
+.list-item {
+    margin-right: 10px;
+}
+  
+.list-item img {
+    max-height: 160px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+  
+.list-item img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

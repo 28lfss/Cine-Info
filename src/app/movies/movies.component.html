@@ -1,0 +1,14 @@
+<div class="movies-container">
+  <div *ngFor="let movie of getPaginatedMovies()" class="movie-item">
+    <a [routerLink]="['/details', movie.imdbID]">
+      <img [src]="getMovieImageURL(movie.imdbID)" alt="{{ movie.Title }}" />
+      <p>{{ movie.Title }}</p>
+    </a>
+  </div>
+</div>
+
+<div class="pagination">
+  <button (click)="prevPage()" [disabled]="currentPage === 1">Previous</button>
+  <span>Page {{ currentPage }}</span>
+  <button (click)="nextPage()" [disabled]="currentPage * itemsPerPage >= movies.length">Next</button>
+</div>
